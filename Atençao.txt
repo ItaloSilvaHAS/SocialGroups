@@ -1,0 +1,14 @@
+Link; https://prod.liveshare.vsengsaas.visualstudio.com/join?8EB29DFCB228035A536EC2C35019B63D6A01
+
+Link repo:https://github.com/ItaloSilvaHAS/SocialGroups
+
+
+Manda Arquivos:
+
+echo "# SocialGroups" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ItaloSilvaHAS/SocialGroups.git
+git push -u origin main
