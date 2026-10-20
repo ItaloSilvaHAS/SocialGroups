@@ -1,24 +1,60 @@
-body{
-margin: 0;
-padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-header .topo{
-border: 1px solid #2f3a45;
-width: auto;
-height: 120px;
-background-color: #2f3a45;
+/* Abaixo está o header junto da nav e a logo e as informações */
+
+header .topo {
+    border: 1px solid #2f3a45;
+    width: auto;
+    height: 100px;
+    background-color: #2f3a45;
 }
 
 
-.topo .logoescrita{
+.topo .logoescrita {
+    position: relative;
+    bottom: 25px;
+
+}
+
+.topo .logo{
 position: relative;
-bottom: 13px;
+    bottom: 15px;
+
 
 }
 
+nav .lista {
+    position: relative;
+    bottom: 70px;
+    left: 300px;
+    list-style: none;
+    display: flex;
+    gap: 100px;
 
-.topo .informações{
-list-style: none;
+}
 
+nav .lista a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+nav .lista a:hover {
+    color: rgb(111, 154, 235);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Abaixo está a barra de pesquisa da nav */
+
+
+section #pesquisa {
+    position: relative;
+    bottom: 160px;
+    left: 80%;
+    border-radius: 5px;
+    padding: 5px;
 }
