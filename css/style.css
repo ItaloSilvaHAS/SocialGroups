@@ -1,0 +1,21 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+header .topo{
+border: 1px solid;
+width: auto;
+height: 90px;
+background-color: #2f3a45;
+}
+
+
+
+.topo #logo{
+position: relative;
+top: 20px;
+left: 5%;
+color: #ffffff;
+font-size: 20px;
+}
