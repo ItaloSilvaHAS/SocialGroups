@@ -62,7 +62,7 @@ body .voltar:hover {
 main .selecao .ONG  {
     position: relative;
     top: 2vw;
-    left: 11vw;
+    left: 9vw;
     font-size: 20px;
     background-color: transparent;
     color: #faf7f7;
@@ -89,7 +89,7 @@ main .selecao .ONG:hover {
 
 main .selecao .Usuario {
     position: relative;
-    right: 7vw;
+    right: 9vw;
     top: 15vw;
     font-size: 19px;
     background-color: transparent;
