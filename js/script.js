@@ -34,4 +34,4 @@ setInterval(() => {
     }
 
     document.getElementById("radio" + count).checked = true;
-}, 5000);
+}, 10000);

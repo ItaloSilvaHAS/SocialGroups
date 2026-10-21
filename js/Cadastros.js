@@ -42,6 +42,7 @@ function cadastrarONG() {
     window.location.href = "../index.html";
 }
 
+// Cadastra o usuario !!
 
 function cadastrarUsuario() {
 
