@@ -29,7 +29,7 @@ position: relative;
 nav .lista {
     position: relative;
     bottom: 70px;
-    left: 300px;
+    margin-left: 400px;
     list-style: none;
     display: flex;
     gap: 100px;
