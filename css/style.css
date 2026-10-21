@@ -59,6 +59,15 @@ nav .lista a:hover {
     cursor: pointer;
 }
 
+nav .Perfil {
+    position: relative;
+    margin-left: 70px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 15px; 
+}
+
 /* Abaixo está a barra de pesquisa da nav e botões */
 
 
@@ -117,6 +126,113 @@ nav #areaUsuario {
     overflow-x: hidden;
     gap: 30px;
 }
+
+/* Conteudo principal abaixo !!*/
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    width: 96%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+}
+
+
+main .conteudo p {
+    font-size: 50px;
+    color: #000000;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+
+main .conteudo #bordainterna {
+    border: 1px solid #000000;
+    height:auto
+}
+
+
+main .slider input{
+display: none;
+overflow: hidden;
+}
+
+main .Slides{
+    margin-top: 1vw;
+    margin-left: 25vw;
+    display: flex;
+    overflow: hidden;
+}
+
+main .slide{
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+main .slide img{
+    width: 1000px;
+    height: 500px;
+}
+
+
+
+main .manual-navigation {
+    position: relative;
+    top: 3vw;
+    right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+main .manual-btn {
+    width: 15px !important;
+    height: 15px !important;
+    border: 2px solid #000;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin: 0 5px;
+    box-sizing: border-box;
+    float: left;
+    transition: 1s;
+}
+
+main .manual-btn:hover{
+background-color: #2aace9;
+transition: 1.0s ease-in-out;
+
+}
+
+main .first{
+    transition: 0.6s;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+
 /* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px */
 
 
