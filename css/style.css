@@ -122,12 +122,12 @@ nav #areaUsuario {
 
 
 
-@media (max-width: 1000px) {
-
-    nav .lista {
+@media screen and (max-width: 1300px) {
+    
+    nav ul.lista {
     position: relative;
     bottom: 70px;
-    margin-left: 200px;
+    margin-left: 20vw;
     list-style: none;
     display: flex;
     gap: 50px;
