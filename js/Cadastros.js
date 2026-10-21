@@ -22,3 +22,40 @@ function voltar() {
     document.getElementById("formOng").style.display = "none";
     document.getElementById("formUsuario").style.display = "none";
 }
+
+// Troca dos botões por Perfil !!
+
+function cadastrarONG() {
+
+    
+    const inputs = document.querySelectorAll("#formOng input");
+
+    for (let input of inputs) {
+        if (input.value.trim() === "") {
+            return;
+        }
+    }
+
+    localStorage.setItem("usuarioLogado", "true");
+
+
+    window.location.href = "../index.html";
+}
+
+
+function cadastrarUsuario() {
+
+    
+    const inputs = document.querySelectorAll("#formUsuario input");
+
+    for (let input of inputs) {
+        if (input.value.trim() === "") {
+            return;
+        }
+    }
+
+    localStorage.setItem("usuarioLogado", "true");
+
+
+    window.location.href = "../index.html";
+}

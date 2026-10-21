@@ -60,9 +60,9 @@ body .voltar:hover {
 }
 
 main .selecao .ONG {
-    position: relative;
-    top: 2vw;
-    left: 6vw;
+    position: absolute;
+    top: 3vw;
+    left: 28%;
     font-size: 20px;
     background-color: transparent;
     color: #faf7f7;
@@ -88,8 +88,8 @@ main .selecao .ONG:hover {
 
 
 main .selecao .Usuario {
-    position: relative;
-    right: 3vw;
+    position: absolute;
+    right: 28%;
     top: 8vw;
     font-size: 19px;
     background-color: transparent;
@@ -122,8 +122,8 @@ main .selecao .Usuario:hover {
 }
 
 .formulario {
-    width: 350px;
-    height: 30vw;
+    width: 15vw;
+    height: 20vw;
     margin: 20px auto;
     padding: 20px;
     border: 2px solid #000;
@@ -153,8 +153,8 @@ main #formUsuario h2 {
 
 main .voltarONG, main .voltarUsuario {
     position: relative;
-    right: 6vw;
-    bottom: 7vw;
+    right: 2vw;
+    bottom: 3vw;
     margin: 20px 0 0 50px;
     padding: 5px 10px;
     background-color: transparent;
@@ -182,7 +182,7 @@ main #formOng input, main #formUsuario input {
     border-radius: 5px;
 }
 
-main #formOng input[type="submit"], main #formUsuario input[type="submit"] {
+main #formOng input[type="button"], main #formUsuario input[type="button"] {
     background-color: #2aace9;
     color: #fff;
     border: none;
@@ -236,7 +236,7 @@ main #formOng input[type="submit"], main #formUsuario input[type="submit"] {
 
 main .selecao .ONG {
     position: relative;
-    top: 2vw;
+    top: 10vw;
     left: 9vw;
     font-size: 20px;
     background-color: transparent;
@@ -264,8 +264,8 @@ main .selecao .ONG:hover {
 
 main .selecao .Usuario {
     position: relative;
-    right: 9vw;
-    top: 15vw;
+    right: 20%;
+    top: 19vw;
     font-size: 19px;
     background-color: transparent;
     color: #faf7f7;

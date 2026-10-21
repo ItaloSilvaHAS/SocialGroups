@@ -5,10 +5,16 @@ element.classList.add('animate__animated', 'animate__fadeInDown');
 
 // Troca dos botões por Perfil !!
 
-const areaUsuario = document.getElementById("areaUsuario");
+function abrirPerfil() {
+    window.location.href = "Pages/Perfil.html";
+}
 
-if(localStorage.getItem("usuarioLogado") === "true"){
+const areaUsuario = document.querySelector(".areaUsuario");
 
+if (
+    areaUsuario &&
+    localStorage.getItem("usuarioLogado") === "true"
+) {
     areaUsuario.innerHTML = `
         <button onclick="abrirPerfil()">
             Perfil
