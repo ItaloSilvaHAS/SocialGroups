@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/Cadastro.css">
+</head>
+
+<body>
+
+    <main>
+
+        <button class="voltar" onclick="window.location.href='../index.html'">Volte</button>
+
+        <!----------------------------- Conteudo Main abaixo!!!------------------------------------------>
+
+        <div class="selecao">
+
+            <div id="menuInicial">
+
+                <button class="ONG" onclick="mostrarFormulario('ong')">
+                    Sou uma ONG
+                </button>
+
+                <button class="Usuario" onclick="mostrarFormulario('usuario')">
+                    Sou um Usuário
+                </button>
+
+            </div>
+
+        </div>
+
+<!----------------------------- Cadastro ONG abaixo------------------------------------------>
+
+        <div id="formOng" class="formulario oculto">
+            <h2>Cadastro ONG</h2>
+
+            <button onclick="voltar()" class="voltarONG">← Voltar</button>
+        <form>
+            <input type="text" placeholder="Nome da ONG" required>
+            <input type="text" placeholder="CNPJ" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="submit" value="Cadastrar" onclick="cadastrarONG()" class="cadastrarONG">
+        </form>
+
+        </div>
+
+
+
+<!----------------------------- Cadastro Usuario abaixo------------------------------------------>
+        <div id="formUsuario" class="formulario oculto">
+            <h2>Cadastro Usuário</h2>
+
+            <button onclick="voltar()"  class="voltarUsuario" >← Voltar</button>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="date" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="submit" value="Cadastrar"  onclick="cadastrarUsuario()" class="cadastrarUsuario">
+            </form>
+        </div>
+
+
+    </section> 
+
+
+    </main>
+
+    <script src="../js/Cadastros.js"></script>
+</body>
+
+</html>
+
+    </section> 

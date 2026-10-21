@@ -8,13 +8,11 @@ Manda Arquivos:
 echo "# SocialGroups" >> README.md
 git init
 git add README.md
-
-Att Repo: git pull origin main --rebase
-
-
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ItaloSilvaHAS/SocialGroups.git
 git push -u origin main
 
 ass: vinicios
+
+

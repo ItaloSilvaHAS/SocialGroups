@@ -70,7 +70,7 @@ section #pesquisa {
     padding: 5px;
 }
 
-nav .botoes {
+nav .areaUsuario {
     position: relative;
     bottom: 145px;
     margin-left: 80%;
@@ -78,7 +78,7 @@ nav .botoes {
     gap: 30px;
 }
 
-nav .botoes button {
+nav .areaUsuario button {
     padding: 5px 10px;
     background-color: #f8ebeb;
     color: #000000;
@@ -88,28 +88,35 @@ nav .botoes button {
     box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
 }
 
-nav .botoes .Entrar {
+nav .areaUsuario .Entrar {
     background-color: #d89606;
     color: #fff;
 }
-nav .botoes .Entrar:hover {
+nav .areaUsuario .Entrar:hover {
     background-color: #a5fcfcc0;
     transition: ease-in-out 0.5s;
     transition: 0.5s;
     transform: scale(1.1);
 }
 
-nav .botoes .Cadastrar {
+nav .areaUsuario .Cadastrar {
     background-color: #2aace9;
     color: #fff;
 }
-nav .botoes .Cadastrar:hover {
+nav .areaUsuario .Cadastrar:hover {
     background-color: #073b77fd;
     transition: ease-in-out 0.5s;
     transition: 0.5s;
     transform: scale(1.1);
 }
 
+nav #areaUsuario {
+    position: relative;
+    bottom: 145px;
+    margin-left: 80%;
+    overflow-x: hidden;
+    gap: 30px;
+}
 /* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px */
 
 
