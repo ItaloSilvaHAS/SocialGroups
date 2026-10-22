@@ -433,6 +433,17 @@ main .first{
 
 
 
+@media screen and (max-width:  1600px)  {
+
+main .slide img{
+    width: 600px;
+    height: 350px;
+}
+}
+
+
+
+
 
 @media screen and (max-width: 1300px) {
     

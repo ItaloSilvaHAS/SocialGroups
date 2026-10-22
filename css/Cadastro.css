@@ -202,13 +202,13 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
 /* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1300px */
 
 
-@media (max-width: 1300px) {
+@media screen and (max-width:  1300px)  {
 
 
 .selecao {
     border-radius: 10px;
     border: 1px solid #c9cacc;
-    width: 400px;
+    width: 1000px;
     height: 300px;
     background-color: transparent;
     backdrop-filter: blur(4px);
