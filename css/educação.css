@@ -126,3 +126,122 @@ nav #areaUsuario {
     overflow-x: hidden;
     gap: 30px;
 }
+
+
+
+
+
+
+
+/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px  e 1600px dps colocarei celulares*/
+
+
+
+@media screen and (max-width:  1600px)  {
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: auto 90vw;
+    height: 60vw;
+}
+
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    width: 96% auto;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 15%;
+    width: 96% auto;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+
+main .slide img{
+    width: 600px;
+    height: 350px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: auto 120vw;
+    height: 90vw;
+}
+
+
+
+
+    nav ul.lista {
+    position: relative;
+    bottom: 70px;
+    margin-left: 20vw;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 18px; 
+
+}
+
+main .slide img{
+    width: 600px;
+    height: 350px;
+}
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+main .conteudo2 {
+    position: relative;
+    top: 15vw;
+    left: 1vw;
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+}

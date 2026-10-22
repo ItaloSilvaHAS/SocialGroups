@@ -429,16 +429,59 @@ main .first{
 
 
 
-/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px */
+/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px  e 1600px dps colocarei celulares*/
 
 
 
 @media screen and (max-width:  1600px)  {
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: auto 90vw;
+    height: 60vw;
+}
+
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    width: 96% auto;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 15%;
+    width: 96% auto;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+
 main .slide img{
     width: 600px;
     height: 350px;
 }
+
+
+
+
+
 }
 
 
@@ -447,6 +490,17 @@ main .slide img{
 
 @media screen and (max-width: 1300px) {
     
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: auto 120vw;
+    height: 100vw auto;
+}
+
+
+
+
     nav ul.lista {
     position: relative;
     bottom: 70px;
@@ -457,4 +511,50 @@ main .slide img{
     font-size: 18px; 
 
 }
+
+main .slide img{
+    width: 600px;
+    height: 350px;
+}
+
+main .conteudo {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+main .conteudo2 {
+    position: relative;
+    top: 15vw;
+    left: 1vw;
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    
+}
+
+main .manual-navigation2 {
+    position: relative;
+    top: 13vw;
+    right: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
 }
