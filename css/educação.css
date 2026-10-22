@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: cover;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Abaixo está o header junto da nav e a logo e as informações */
+
+header .topo {
+    border: 1px solid #2f3a45;
+    width: auto;
+    height: 100px;
+    background-color: #2f3a45;
+}
+
+
+.topo .logoescrita {
+    position: relative;
+    bottom: 25px;
+
+}
+
+.topo .logo{
+position: relative;
+    bottom: 15px;
+
+
+}
+
+nav .lista {
+    position: relative;
+    bottom: 70px;
+    margin-left: 600px;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    font-size: 18px; 
+
+}
+
+nav .lista a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+nav .lista a:hover {
+    color: rgb(111, 154, 235);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav .Perfil {
+    position: relative;
+    margin-left: 70px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 15px; 
+}
+
+/* Abaixo está a barra de pesquisa da nav e botões */
+
+
+section #pesquisa {
+    position: relative;
+    bottom: 160px;
+    left: 80%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav .areaUsuario {
+    position: relative;
+    bottom: 145px;
+    margin-left: 80%;
+    display: flex;
+    gap: 30px;
+}
+
+nav .areaUsuario button {
+    padding: 5px 10px;
+    background-color: #f8ebeb;
+    color: #000000;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
+}
+
+nav .areaUsuario .Entrar {
+    background-color: #d89606;
+    color: #fff;
+}
+nav .areaUsuario .Entrar:hover {
+    background-color: #a5fcfcc0;
+    transition: ease-in-out 0.5s;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+nav .areaUsuario .Cadastrar {
+    background-color: #2aace9;
+    color: #fff;
+}
+nav .areaUsuario .Cadastrar:hover {
+    background-color: #073b77fd;
+    transition: ease-in-out 0.5s;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+nav #areaUsuario {
+    position: relative;
+    bottom: 145px;
+    margin-left: 80%;
+    overflow-x: hidden;
+    gap: 30px;
+}

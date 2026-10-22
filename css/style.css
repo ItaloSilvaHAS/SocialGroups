@@ -143,10 +143,41 @@ main .conteudo {
     
 }
 
+main .brilho{
+    color: white;
+    animation: brilho 1.5s infinite alternate;
+}
+
+@keyframes brilho{
+    from{
+        text-shadow:
+            0 0 5px #b9cfd3,
+            0 0 10px #e1e9eb;
+    }
+
+    to{
+        text-shadow:
+            0 0 10px #d1d8da,
+            0 0 20px #cfd5d6,
+            0 0 40px #c7d8db,
+            0 0 80px #00d9ff;
+    }
+}
+
+main .brilho{
+    transition: 0.3s;
+}
+
+main .brilho:hover{
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
 
 main .conteudo p {
     font-size: 50px;
-    color: #000000;
+    color: #0a0a0a98;
     text-align: start;
     margin-top: 20px;
     margin-bottom: 20px;
