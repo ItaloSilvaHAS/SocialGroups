@@ -25,6 +25,8 @@ function voltar() {
 
 // Troca dos botões por Perfil !!
 
+// Cadastra ONGS
+
 function cadastrarONG() {
 
     
@@ -36,8 +38,8 @@ function cadastrarONG() {
         }
     }
 
-    localStorage.setItem("usuarioLogado", "true");
-
+    localStorage.setItem("logado", "ong");
+    
 
     window.location.href = "../index.html";
 }
@@ -55,8 +57,11 @@ function cadastrarUsuario() {
         }
     }
 
-    localStorage.setItem("usuarioLogado", "true");
-
-
+    localStorage.setItem("logado", "user");
+   
     window.location.href = "../index.html";
 }
+
+
+//  localStorage.setItem("tipo", "user");
+//   localStorage.setItem("tipo", "ong");

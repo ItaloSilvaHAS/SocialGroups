@@ -5,21 +5,32 @@ element.classList.add('animate__animated', 'animate__fadeInDown');
 
 // Troca dos botões por Perfil abaixo !!
 
-function abrirPerfil() {
-    window.location.href = "Pages/Perfil.html";
+function abrirPerfilOng() {
+    window.location.href = "./Pages/PerfilOng.html";
+}
+
+function abrirPerfilUser() {
+    window.location.href = "./Pages/PerfilUser.html";
 }
 
 const areaUsuario = document.querySelector(".areaUsuario");
 
 if (
     areaUsuario &&
-    localStorage.getItem("usuarioLogado") === "true"
+    localStorage.getItem("logado") === "ong"
 ) {
     areaUsuario.innerHTML = `
-        <button onclick="abrirPerfil()" class="Perfil">
+        <button onclick="abrirPerfilOng()" class="PerfilOng">
             Perfil
         </button>
     `;
+}else if( localStorage.getItem("logado") === "user"){
+
+     areaUsuario.innerHTML = `
+        <button onclick="abrirPerfilUser()" class="PerfilUser">
+            Perfil
+        </button>
+        `;
 }
 
 // Troca automatica dos slides abaixo!! 
