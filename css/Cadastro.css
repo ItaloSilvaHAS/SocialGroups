@@ -199,160 +199,98 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
 
 
 
-/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1300px */
-
-
-@media screen and (max-width:  1300px)  {
-
-
-.selecao {
-    border-radius: 10px;
-    border: 1px solid #c9cacc;
-    width: 1000px;
-    height: 300px;
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-    position: relative;
-    top: 5vw;
-    left: 35vw;
-    text-align: center;
-    padding-top: 50px;
-
-
-}
-
-main .selecao .ONG {
-    position: relative;
-    top: 3vw;
-    left: 8vw;
-    font-size: 20px;
-    background-color: transparent;
-    color: #faf7f7;
-    border-radius: 5px;
-    border: 1px solid #0f0f0f;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-    padding: 10px 20px;
-
-}
-
-main .selecao .ONG:hover {
-    background-color: #18b6f5;
-    color: #000000;
-    border: 1px solid #fdfdfd;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-    transition: 1.5s;
-    transform: scale(1.1);
-    transition: 1.5s ease-in-out;
-}
-
-
-main .selecao .Usuario {
-    position: relative;
-    right: 20%;
-    top: 13vw;
-    font-size: 19px;
-    background-color: transparent;
-    color: #faf7f7;
-    border-radius: 5px;
-    border: 1px solid #0f0f0f;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-    padding: 10px 20px;
-
-}
-
-main .selecao .Usuario:hover {
-    background-color: #18b6f5f8;
-    color: #000000;
-    border: 1px solid #fcfafa;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-    transition: 1.5s;
-    transform: scale(1.1);
-    transition: 1.5s ease-in-out;
-}
-
-oculto {
-    display: none;
-}
-
-.formulario {
-    width: 25vw;
-    height: 35vw;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #000;
-    border-radius: 15px;
-    backdrop-filter: blur(4px);
-}
-
-.formulario input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Abaixo está os estilos para o cadastrar-se /ONG e usuário OCULTAS!! */
-
-main #formOng h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fcf9f9;
-}
-
-main #formUsuario h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fcf9f9;
-}
-
-main .voltarONG, main .voltarUsuario {
-    position: relative;
-    right: 5vw;
-    bottom: 3vw;
-    margin: 20px 0 0 50px;
-    padding: 5px 10px;
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-}
-
-main .voltarONG:hover, main .voltarUsuario:hover {
-    background-color: #81b0f5;
-    cursor: pointer;
-    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-    transform: scale(1.1);
-    transition: 1.0s ease-in-out;
-}
-
-
-main #formOng input, main #formUsuario input {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-main #formOng input[type="button"], main #formUsuario input[type="button"] {
-    background-color: #2aace9;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    top: 1vw;
-    left: 1vw;
-}
+/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 800px */
 
 
 
+
+@media screen and (max-width: 800px){
+
+    body{
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* botão voltar */
+
+    .voltar{
+        display: block;
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    /* caixa principal */
+
+    .selecao{
+        width: 85%;
+        max-width: 350px;
+        height: 250px;
+
+        left: 0;
+        top: 70px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 30px 15px;
+    }
+
+    /* botões */
+
+    main .selecao .ONG,
+    main .selecao .Usuario{
+
+        position: static;
+
+        width: 80%;
+
+        margin: 40px 0;
+
+        font-size: 18px;
+
+        padding: 12px;
+    }
+
+    /* formulários */
+
+    .formulario{
+        width: 85%;
+        height: auto;
+
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    main #formOng input,
+    main #formUsuario input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main #formOng input[type="button"],
+    main #formUsuario input[type="button"]{
+
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .voltarONG,
+    .voltarUsuario{
+
+
+        top: -160px;
+        
+        width: 26%;
+       
+    }
 
 }
