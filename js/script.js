@@ -46,3 +46,12 @@ setInterval(() => {
 
     document.getElementById("radio" + count).checked = true;
 }, 10000);
+
+// Menu mobile!!
+
+const menuBtn = document.getElementById("menuBtn");
+const menuLista = document.getElementById("menuLista");
+
+menuBtn.addEventListener("click", () => {
+    menuLista.classList.toggle("ativo");
+});
