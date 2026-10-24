@@ -356,11 +356,20 @@ position: relative;
     top: 250px;
 }
 
+.nome{
+    margin: 0;
+}
+
+.btn-seguir{
+position: relative;
+
+}
+
     .avatar-wrap,
-    .nome,
     .avaliacao,
-    .btn-seguir,
     .estatisticas {
+        position: relative;
+
         position: static;
         transform: none;
     }
