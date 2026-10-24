@@ -420,14 +420,19 @@ main .first {
 
 @media screen and (max-width: 800px) {
 
+
+
+
+
+
     body {
         background-image: url("../imagens/img principal.jpg");
         background-size: cover;
         background-position: center;
         min-width: 10vw;
-        min-height: 500vw;
+        min-height: 380vw;
         background-repeat: no-repeat;
-        height: 50vw;
+        
     }
 
     /* HEADER */
