@@ -58,7 +58,7 @@ function cadastrarUsuario() {
     }
 
     localStorage.setItem("logado", "user");
-   
+
     window.location.href = "../index.html";
 }
 

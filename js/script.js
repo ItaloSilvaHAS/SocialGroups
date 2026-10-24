@@ -6,11 +6,11 @@ element.classList.add('animate__animated', 'animate__fadeInDown');
 // Troca dos botões por Perfil abaixo !!
 
 function abrirPerfilOng() {
-    window.location.href = "./Pages/PerfilOng.html";
+    window.location.href = "../Pages/PerfilOng.html";
 }
 
 function abrirPerfilUser() {
-    window.location.href = "./Pages/PerfilUser.html";
+    window.location.href = "../Pages/PerfilUser.html";
 }
 
 const areaUsuario = document.querySelector(".areaUsuario");
@@ -26,7 +26,7 @@ if (
     `;
 }else if( localStorage.getItem("logado") === "user"){
 
-     areaUsuario.innerHTML = `
+    areaUsuario.innerHTML = `
         <button onclick="abrirPerfilUser()" class="PerfilUser">
             Perfil
         </button>
