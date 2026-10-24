@@ -85,7 +85,7 @@ function mostrarFoto(card, src) {
 }
 
 // Gera os 9 cards
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < 27; i++) {
     const card = document.createElement('button');
     card.className = 'card';
     card.setAttribute('aria-label', 'Foto ' + (i + 1));
