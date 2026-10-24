@@ -352,7 +352,8 @@ position: relative;
     border-radius: 15px;
     background-color: transparent;
     justify-content: center;
-    
+    margin-right: 350px;
+    top: 250px;
 }
 
     .avatar-wrap,
