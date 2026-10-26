@@ -1,30 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+</html>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="../css/PerfilOng.css">
 </head>
 
+
+
 <body>
-    
-    <h1>Meu Perfil</h1>
 
-    <button onclick="logout()">
-        Sair
-    </button>
+    <div class="perfil">
 
-    <script>
+        <!-- Cabeçalho -->
+        <header class="topo">
 
-        function logout(){
 
-            localStorage.removeItem("logado");
+    <button onclick="logout()" id="btnLimpar" class="sair"> Sair </button>
 
-            window.location.href = "../index.html";
-        }
+            <button class="btn-icone btn-voltar" aria-label="Voltar" onclick="window.location.href='../index.html'">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 5l-7 7 7 7" />
+                </svg>
+            </button>
 
-    </script>
 
+
+            <div class="avatar-wrap">
+                <button class="avatar" id="avatarBtn" aria-label="Alterar foto de perfil"
+                    title="Clique para alterar a foto">
+                    <span id="avatarConteudo">
+
+                    </span>
+                </button>
+            </div>
+
+            <h1 class="nome" id="nomeUsuario()">#########</h1>
+            <div class="avaliacao">Avaliação: #####</div>
+
+            <button class="btn-seguir" id="btnSeguir">Seguir</button>
+
+            <button class="doar">Doação</button>
+
+            <div class="estatisticas">
+                <span>ONGs Seguidas:#####</span>
+                <span>Eventos :#####</span>
+            </div>
+        </header>
+
+        <!-- Corpo -->
+        <div class="corpo">
+            <aside class="lateral">
+                <svg class="sino" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                    <path d="M13.7 21a2 2 0 01-3.4 0" />
+                </svg>
+                <nav>
+                    <a href="#">Galeria de Participações </a>
+                    <a href="#">Contato </a>
+                    <a href="#">Redes Sociais </a>
+                    <a href="#">Endereço </a>
+                </nav>
+            </aside>
+
+            <main class="principal">
+                <section class="sobre">
+                    <span>Sobre nossa Organização:</span>
+                </section>
+
+                <section class="interesses">
+                    <strong>Nossa Missão:</strong>
+                    <small>###</small>
+                </section>
+
+                <section class="barra">
+                    <button class="btn-editar">Editar Perfil</button>
+                    <button class="btn-camera" id="cameraBtn" aria-label="Trocar foto de perfil"
+                        title="Trocar foto de perfil">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+                            <circle cx="12" cy="13" r="4" />
+                        </svg>
+                    </button>
+                    <button class="btn-galeria" aria-label="Galeria">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="6" y="3" width="15" height="15" rx="2" />
+                            <path d="M3 7v12a2 2 0 002 2h12" />
+                            <path d="M8.5 14l3-3.5 2.5 2.5 3-4" />
+                        </svg>
+                    </button>
+                </section>
+
+                <section class="grade" id="grade"></section>
+            </main>
+        </div>
+    </div>
+
+    <input type="file" id="inputFoto" accept="image/*" hidden>
+
+    <script src="../js/perfilUser.js"></script>
+    <script> function logout(){ localStorage.removeItem("logado"); window.location.href = "../index.html";} </script>
 </body>
+
 </html>
