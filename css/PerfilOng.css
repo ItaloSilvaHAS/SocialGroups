@@ -142,6 +142,14 @@ body {
         transition: background .2s;
     }
 
+    .btn-seguir:hover {
+        background: #1a7aa5;
+    }
+
+    .btn-seguir.seguindo {
+        background: #6b7b86;
+    }
+
     .doar {
         position: absolute;
         right: 65vw;
@@ -158,13 +166,11 @@ body {
     }
 
 
-    .btn-seguir:hover {
-        background: #1a7aa5;
+    .doar:hover {
+        background: #1d8d3e;
     }
 
-    .btn-seguir.seguindo {
-        background: #6b7b86;
-    }
+
 
     .estatisticas {
         position: absolute;
