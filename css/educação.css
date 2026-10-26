@@ -1,3 +1,9 @@
+S * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +19,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 /* Abaixo está o header junto da nav e a logo e as informações */
 
 header .topo {
@@ -29,8 +36,8 @@ header .topo {
 
 }
 
-.topo .logo{
-position: relative;
+.topo .logo {
+    position: relative;
     bottom: 15px;
 
 
@@ -43,7 +50,7 @@ nav .lista {
     list-style: none;
     display: flex;
     gap: 80px;
-    font-size: 18px; 
+    font-size: 18px;
 
 }
 
@@ -65,8 +72,10 @@ nav .Perfil {
     list-style: none;
     display: flex;
     gap: 10px;
-    font-size: 15px; 
+    font-size: 15px;
 }
+
+
 
 /* Abaixo está a barra de pesquisa da nav e botões */
 
@@ -101,6 +110,7 @@ nav .areaUsuario .Entrar {
     background-color: #d89606;
     color: #fff;
 }
+
 nav .areaUsuario .Entrar:hover {
     background-color: #a5fcfcc0;
     transition: ease-in-out 0.5s;
@@ -112,6 +122,7 @@ nav .areaUsuario .Cadastrar {
     background-color: #2aace9;
     color: #fff;
 }
+
 nav .areaUsuario .Cadastrar:hover {
     background-color: #073b77fd;
     transition: ease-in-out 0.5s;
@@ -128,120 +139,363 @@ nav #areaUsuario {
 }
 
 
+.menu-mobile {
+    display: none;
+}
 
+/*------Conteudo main abaixo */
 
+.pagina-noticia{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
 
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
 
+.carrossel-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:380px;
 
-/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px  e 1600px dps colocarei celulares*/
+}
 
+.carrossel-vertical{
+    width:250%;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    top: 50px;
+}
 
+.slide{
+    position:absolute;
+    top:0;
+    left:01;
 
-@media screen and (max-width:  1600px)  {
+    width:100%;
+    height:100%;
 
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../imagens/img\ principal.jpg);
-    background-size: auto 90vw;
-    height: 60vw;
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(40px);
+
+    transition:.5s ease;
+}
+
+.slide.ativo{
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
 }
 
 
-main .conteudo {
+.slide img{
     position: relative;
-    top: 5vw;
-    left: 1vw;
-    width: 96% auto;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.699);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color: #fff;
-    
+    margin-left: 7vw;
+    width:80%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-main .conteudo {
-    position: relative;
-    top: 5vw;
-    left: 15%;
-    width: 96% auto;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.699);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color: #fff;
-    
-}
+.conteudo-noticia{
+    flex:1;
+    min-height:400px;
+    margin-top: 3vw;
 
-
-main .slide img{
-    width: 600px;
-    height: 350px;
-}
-}
-
-
-
-
-
-@media screen and (max-width: 1300px) {
-    
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../imagens/img\ principal.jpg);
-    background-size: auto 120vw;
-    height: 90vw;
-}
-
-
-
-
-    nav ul.lista {
-    position: relative;
-    bottom: 70px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
     margin-left: 20vw;
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    font-size: 18px; 
+    padding:35px;
+}
+
+.conteudo-noticia h1{
+    font-size:42px;
+    color:#2f3a45;
+    margin-bottom:20px;
+}
+
+.conteudo-noticia p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+.seta{
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#ff7b22;
+    color:white;
+
+    font-size:20px;
+    margin:10px 0;
+}
+
+.botoes-mobile{
+    display:none;
+}
+
+.botoes-desktop{
+    display:flex;
+    flex-direction:column;
+}
+
+#btn-up.seta{
+position: relative;
+top: -540px;
 
 }
 
-main .slide img{
-    width: 600px;
-    height: 350px;
-}
+/* Estilos aplicados apenas em celulares até 800px dps colocarei celulares*/
 
-main .conteudo {
-    position: relative;
-    top: 5vw;
-    left: 1vw;
-    width: 90vw;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.699);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color: #fff;
+
+
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background-image: url("../imagens/img principal.jpg");
+        background-size: cover;
+        background-position: center;
+        min-width: 10vw;
+        min-height: 380vw;
+        background-repeat: no-repeat;
+
+    }
+
+    /* HEADER */
+
+    header .topo {
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .topo .logo {
+        position: relative;
+        bottom: 9vw;
+        width: 70px;
+        height: auto;
+    }
+
+    .topo .logoescrita {
+        position: relative;
+        bottom: 30vw;
+        margin-right: 59vw;
+        width: 90px;
+        height: auto;
+    }
+
+    /*---------Abaixo o menu mobile -----*/
+
+    nav .menu-lista {
+        display: none;
+    }
+
+
+    .menu-mobile {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .menu-btn {
+        background: #2aace9;
+        color: white;
+        border: none;
+        font-size: 28px;
+        padding: 8px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    .menu-btn:hover {
+        background: #073b77;
+        transform: scale(1.1);
+    }
+
+
+    .menu-lista {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        background: #2f3a45;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    }
+
+
+    .menu-lista li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        transition: 0.3s;
+    }
+
+
+    .menu-lista li a:hover {
+        background: #2aace9;
+    }
+
+
+    .menu-lista.ativo {
+        display: block;
+        animation: aparecer 0.3s ease;
+    }
+
+
+    .lista {
+        display: none !important;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*---------acima o menu mobile -----*/
+
+    nav .lista {
+        margin-left: 0;
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    nav .barra-pesquisa {
+        overflow: hidden;
+    }
+
+    nav .areaUsuario {
+        position: relative;
+        right: 240px;
+        margin-top: 60px;
+        gap: 15px;
+
+    }
+
+
+     .pagina-noticia{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        width:100%;
+        margin-top:150px;
+    }
+
+    .carrossel-container{
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .carrossel-vertical{
+
+        width:350px;
+        height:220px;
+       border-radius:10px;
+        position:relative;
+        margin:0 auto;
+        margin-right: 10vw;
+    }
+
+    .slide img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        border-radius:10px;
+    }
+
+    .seta{
+        position:static;
+    }
+
+/* Área dos botões */
+    .botoes-slide{
+        display:flex;
+        justify-content:center;
+        gap:45px;
+        margin-top:20px;
+    }
+
+    .seta{
+     
+        width:55px;
+        height:55px;
+        
+        border:none;
+        border-radius:50%;
+        background:#ff8726;
+        color:white;
+        font-size:22px;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .seta:hover{
+        transform:scale(1.1);
+    }
+
     
+
+    .conteudo-noticia{
+
+        width:85%;
+        margin-top:30px;
+        margin-left:0;
+        margin-top: 70px;
+        padding:20px;
+    }
+
+    .botoes-desktop{
+        display:none;
+    }
+
+    .botoes-mobile{
+        position: relative;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        top: 90px;
+    }
+
 }
 
-main .conteudo2 {
-    position: relative;
-    top: 15vw;
-    left: 1vw;
-    width: 90vw;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.699);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color: #fff;
-    
-}
-
-}

@@ -23,14 +23,29 @@
 
             <div class="informações">
                 <ul class="lista">
-
                     <li><a href="../index.html"> Início </a></li>
-                    <li><a href="../Pages/ongs.html"> ONGS </a></li>
-                    <li><a href="../Pages/projetos.html"> Projetos </a></li>
-                    <li><a href="../Pages/eventos.html"> Eventos </a></li>
-                    <li><a href="../Pages/vagas.html"> Vagas </a></li>
+                    <li><a href="Pages/ongs.html"> ONGS </a></li>
+                    <li><a href="Pages/projetos.html"> Projetos </a></li>
+                    <li><a href="Pages/eventos.html"> Eventos </a></li>
+                    <li><a href="Pages/vagas.html"> Vagas </a></li>
 
                 </ul>
+            </div>
+
+            <div class="menu-mobile">
+
+                <button id="menuBtn" class="menu-btn">
+                    ☰
+                </button>
+
+                <ul id="menuLista" class="menu-lista">
+                    <li><a href="../index.html"> Início </a></li>
+                    <li><a href="ongs.html">ONGs</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="vagas.html">Vagas</a></li>
+                </ul>
+
             </div>
 
             <section class="barra-pesquisa">
@@ -43,8 +58,8 @@
 
             <div class="areaUsuario">
 
-                <button class="Cadastrar" onclick="window.location.href='../Pages/Cadastro.html'">Cadastrar</button>
-                <button class="Entrar" onclick="window.location.href='../Pages/Login.html'">Entrar</button>
+                <button class="Cadastrar" onclick="window.location.href='Cadastro.html'">Cadastrar</button>
+                <button class="Entrar" onclick="window.location.href='Login.html'">Entrar</button>
 
 
             </div>
@@ -53,13 +68,69 @@
 
     </header>
 
+    <main>
+
+        <section class="pagina-noticia">
+
+            <div class="carrossel-container">
+
+               
+
+                <div class="carrossel-vertical">
+
+                    <div class="slide ativo">
+                        <img src="../imagens/educação slide.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/educação slide 2.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/educação slide 3.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/educação slide 4.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- Desktop -->
+                <div class="botoes-desktop">
+                    <button class="seta" id="btn-up">▲</button>
+                    <button class="seta" id="btn-down">▼</button>
+                </div>
+
+                <!-- Mobile -->
+                <div class="botoes-mobile">
+                    <button class="seta" id="btn-left">◀</button>
+                    <button class="seta" id="btn-right">▶</button>
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-noticia">
+
+                <h1 id="tituloNoticia">
+                    Projeto de Reciclagem
+                </h1>
+
+                <p id="descricaoNoticia">
+                    Descrição da notícia aparecerá aqui.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
 
 
 
 
-    
-<script src="../js/Educação.js"></script>
-<script src="../js/Cadastros.js"></script>
+
+    <script src="../js/Educação.js"></script>
 </body>
 
 </html>
