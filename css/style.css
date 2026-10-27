@@ -636,7 +636,7 @@ main .first {
 
 /*------------telas até 1600px */
 
-@media screen and (max-width: 1600px) {
+@media (min-width: 1200px) {
 
 main .Slides {
         margin: 15px 0;

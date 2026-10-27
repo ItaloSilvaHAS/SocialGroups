@@ -500,3 +500,18 @@ nav #areaUsuario {
     }
 
 }
+
+@media (min-width: 1200px) {
+
+nav .lista {
+    position: relative;
+    bottom: 70px;
+    margin-left: 500px;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    font-size: 18px;
+
+}
+
+}
