@@ -499,6 +499,10 @@ nav #areaUsuario {
         top: 90px;
     }
 
+    .carrossel-vertical {
+    touch-action: pan-y;
+}
+
 }
 
 @media (min-width: 1200px) {

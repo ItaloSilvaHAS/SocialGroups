@@ -163,3 +163,35 @@ if (
 }
 
 console.log("Slides encontrados:", slides.length);
+
+
+//add touch nos slides para
+
+const carrossel = document.querySelector(".carrossel-vertical");
+ 
+let startX = 0;
+let startY = 0;
+ 
+carrossel.addEventListener("touchstart", (e) => {
+startX = e.touches[0].clientX;
+startY = e.touches[0].clientY;
+});
+ 
+carrossel.addEventListener("touchend", (e) => {
+const endX = e.changedTouches[0].clientX;
+const endY = e.changedTouches[0].clientY;
+ 
+const deltaX = endX - startX;
+const deltaY = endY - startY;
+ 
+// Ignora movimentos mais verticais do que horizontais
+if (Math.abs(deltaX) < Math.abs(deltaY)) return;
+ 
+if (deltaX > 50) {
+anterior();
+}
+ 
+if (deltaX < -50) {
+proximo();
+}
+});

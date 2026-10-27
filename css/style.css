@@ -628,7 +628,9 @@ main .first {
 
     }
 
-
+.carrossel-vertical {
+    touch-action: pan-y;
+}
 
 
 }
@@ -636,7 +638,9 @@ main .first {
 
 /*------------telas até 1600px */
 
-@media (min-width: 1200px) {
+
+
+@media (min-width: 1200px) and (max-widht: 1600px) {
 
 main .Slides {
         margin: 15px 0;
@@ -649,3 +653,4 @@ main .Slides {
     }
 
 }
+
