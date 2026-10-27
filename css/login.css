@@ -1,91 +1,124 @@
- *{
-    margin: 0;
-    padding: 0;
+ * {
+     margin: 0;
+     padding: 0;
  }
 
- .conteiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 825px;
-    background-image: url(Img\ cadastro\ login.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ .conteiner {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 825px;
+     background-image: url(../imagens/Img\ cadastro\ login.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
  }
 
- .form h1{
-    font-size: 40px;
-    text-align: center;
-    font-weight: 700;
-    padding: 30px 0px 60px 0px ;
+
+ body .voltar {
+     position: relative;
+     right: 25vw;
+     bottom: 10vw;
+     margin: 20px 0 0 50px;
+     padding: 5px 10px;
+     background-color: transparent;
+     color: #ffffff;
+     border: 1px solid #fafafa;
+     border-radius: 5px;
+     cursor: pointer;
+     box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
+
  }
- 
- .form{
-    border: 1px solid rgb(253, 253, 253);
-    width: 400px;
-    height: 500px;
-    justify-content: center;
-    backdrop-filter: blur(2px);
-    align-items: center;
-    border-radius: 10px;
-    
-}
 
-.form form p {
-    margin: 45px;
-    position: relative;
-}
+ body .voltar:hover {
+     background-color: #f8ebeb;
+     color: #000000;
+     border: 1px solid #0f0f0f;
+     border-radius: 5px;
+     cursor: pointer;
+     box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
+     transition: 1.5s;
+     transform: scale(1.1);
+     transition: 0.5s ease-in-out;
+ }
 
-.form .botao{
-    background-color: #0C9AF2;
-    color: #ffff;
-    font-weight: 800px;
-    padding: 10px 10px 10px;
-    
-    cursor: pointer;
-    border: none;
-    transition: 0.3s;
-}
 
- .form .botao:hover{
-    scale: 1.1;
-}
+ .form h1 {
+     color: #fafafa;
+     font-size: 40px;
+     text-align: center;
+     font-weight: 700;
+     padding: 30px 0px 60px 0px;
+ }
 
- .form form{
-    border-radius: 15px;
-    padding: 15px;
-    
-    width: 400px;
-    
-    
-}
+ .form {
+     border: 1px solid rgb(253, 253, 253);
+     width: 400px;
+     height: 500px;
+     justify-content: center;
+     backdrop-filter: blur(4px);
+     align-items: center;
+     border-radius: 10px;
 
-.form form p input{
-    width: 100%;
-    border: 0;
-    background-color: transparent;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: gray;
-    outline:0;
+ }
 
-}
-.form form p label{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    font-weight: 700;
-    font-size: 20px;
-    left: 0;
-    transition: 0.5s ease;
-    
-}
+ .form form p {
+     margin: 45px;
+     position: relative;
+ }
+
+ .form .botao {
+     background-color: #0C9AF2;
+     color: #ffff;
+     font-weight: 800px;
+     padding: 10px 10px 10px;
+
+     cursor: pointer;
+     border: none;
+     transition: 0.3s;
+ }
+
+ .form .botao:hover {
+     scale: 1.1;
+ }
+
+ .form form {
+     border-radius: 15px;
+     padding: 15px;
+
+     width: 400px;
+
+
+ }
+
+ .form form p input {
+     width: 100%;
+     border: 0;
+     background-color: transparent;
+     border-bottom: 2px solid rgb(255, 255, 255);
+     color: gray;
+     outline: 0;
+
+ }
+
+ .form form p label {
+     color: rgb(255, 255, 255);
+     position: absolute;
+     font-weight: 700;
+     font-size: 20px;
+     left: 0;
+     transition: 0.5s ease;
+
+ }
+
  .form form p input:focus,
- .form form p input:valid{
-    border-bottom:2px solid cornflowerblue;
-}
+ .form form p input:valid {
+     border-bottom: 2px solid cornflowerblue;
+ }
+
  .form form p input:focus~label,
- .form form p input:valid~label{
-    color: cornflowerblue;
-    transform: translateY(-20px);
-}
+ .form form p input:valid~label {
+     color: cornflowerblue;
+     transform: translateY(-20px);
+ }
