@@ -505,17 +505,27 @@ nav #areaUsuario {
 
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1800px) {
 
-nav .lista {
-    position: relative;
-    bottom: 70px;
-    margin-left: 500px;
-    list-style: none;
-    display: flex;
-    gap: 80px;
-    font-size: 18px;
+ nav .lista {
+        margin-left: 0;
+        position: relative;
+        right: 3; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin-top: 15px;
+        font-size: 20px;
+    }
 
-}
 
+    .slide img {
+        margin-left: 20vw;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
 }

@@ -69,23 +69,23 @@ const slides = document.querySelectorAll(".slide");
 const noticias = [
 
     {
-        titulo: "Titulo temporario!!",
-        descricao: "descrição temporaria!!"
+        titulo: "Transformando Vidas por Meio da Educação",
+        descricao: "Da construção de projetos educacionais ao aprendizado em sala de aula e à conquista da formação acadêmica, a educação é a ferramenta mais poderosa para criar oportunidades, desenvolver talentos e transformar o futuro de indivíduos e comunidades."
     },
 
     {
-        titulo: "Titulo temporario!!",
-        descricao: "descrição temporaria!!"
+        titulo: "Juntos pelo Acesso ao Conhecimento",
+        descricao: "A jornada da educação começa com o planejamento, ganha vida na sala de aula e se concretiza na formação de cidadãos preparados para enfrentar desafios, inovar e contribuir positivamente para a sociedade."
     },
 
     {
-        titulo: "Titulo temporario!!",
-        descricao: "descrição temporaria!!"
+        titulo: "Sua Contribuição Constrói Futuros",
+        descricao: "Por meio de ações sociais e programas educacionais, organizações do terceiro setor trabalham para reduzir desigualdades e garantir que mais pessoas tenham acesso a ensino de qualidade, capacitação e oportunidades de crescimento."
     },
 
     {
-        titulo: "Titulo temporario!!",
-        descricao: "descrição temporaria!!"
+        titulo: "Educação que Gera Impacto Social",
+        descricao: "Investir em educação é investir em inclusão, cidadania e desenvolvimento. Cada aluno apoiado, cada aula oferecida e cada diploma conquistado representam um passo em direção a uma sociedade mais justa e igualitária."
     }
 
 ];

@@ -636,21 +636,35 @@ main .first {
 }
 
 
-/*------------telas até 1600px */
+/*------------telas até 1200 a 1600px */
 
 
 
-@media (min-width: 1200px) and (max-widht: 1600px) {
+@media screen and (min-width: 900px) and (max-width: 1800px) {
+
+ nav .lista {
+        margin-left: 0;
+        position: relative;
+        right: 3; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
 
 main .Slides {
         margin: 15px 0;
     }
 
     main .Slides img {
-        height: 24vw;
+        height: 25vw;
         width: 50vw;
         border-radius: 10px;
     }
 
 }
+
 
