@@ -5,63 +5,146 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialGroups - Home</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/projeto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
 
-<!----------------------------- Header e Nav bar abaixo junto das logos e informações!!!------------------------------------------>
+    <!----------------------------- Header e Nav bar abaixo junto das logos e informações!!!------------------------------------------>
 
-<header>
+    <header>
 
-<nav class="topo">
+        <nav class="topo">
 
-    <img src="../imagens/logo com borda.png" height="120px" width="95px" class="logo">
-    <img src="../imagens/logo escrita.png" height="90px" width="110px" class="logoescrita">
+            <img src="../imagens/logo com borda.png" height="120px" width="95px" class="logo">
+            <img src="../imagens/logo escrita.png" height="90px" width="110px" class="logoescrita">
 
-<div class="informações">
-<ul class="lista">
+            <div class="menu-mobile">
 
-<li><a href="../index.html"> Início </a></li>
-<li><a href="ongs.html"> ONGS </a></li>
-<li><a href="eventos.html"> Eventos </a></li>
-<li><a href="vagas.html"> Vagas </a></li>
+                <button id="menuBtn" class="menu-btn">
+                    ☰
+                </button>
 
-</ul>
-</div>
+                <ul id="menuLista" class="menu-lista">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="Pages/eventos.html">Eventos</a></li>
+                    <li><a href="Pages/vagas.html">Vagas</a></li>
+                </ul>
+            </div>
 
-<section class="barra-pesquisa">
 
-<input type="text" placeholder="Pesquisar..." id="pesquisa">
+            <!----------------------------- Header e Nav bar abaixo junto dos botões------------------------------------------>
 
-</section>
-
-<!----------------------------- Header e Nav bar abaixo junto dos botões------------------------------------------>
-
-<div class="areaUsuario">
+            <div class="areaUsuario">
 
                 <button class="Cadastrar" onclick="window.location.href='Pages/Cadastro.html'">Cadastrar</button>
                 <button class="Entrar" onclick="window.location.href='Pages/Login.html'">Entrar</button>
 
-</div>        
+            </div>
 
-</nav>
+        </nav>
 
-</header>
+    </header>
 
-<!----------------------------- Conteudo Main abaixo!!!------------------------------------------>
-
-
-<main>
+    <!----------------------------- Conteudo Main abaixo!!!------------------------------------------>
 
 
-</main>
+    <main>
+        <section class="projetos">
 
-<script src="../js/script.js"></script>
+            <h1>Projetos Sociais</h1>
 
+            <div class="filtros">
+
+                <input type="text" id="pesquisa" placeholder="Pesquisar projeto...">
+
+                <select id="categoria">
+                    <option value="Todos">Categorias</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Meio Ambiente">Meio Ambiente</option>
+                    <option value="Proteção Animal">Proteção Animal</option>
+                    <option value="Cultura">Cultura</option>
+                    <option value="Esporte">Esporte</option>
+                    <option value="Esporte">Tecnologia</option>
+                    <option value="Esporte">Assistência Social</option>
+                    <option value="Esporte">Terceira Idade</option>
+                    <option value="Esporte">Inclusão Social</option>
+                    <option value="Esporte">Conservação Marinha</option>
+                </select>
+
+
+
+
+
+                <select id="cidade">
+                    <option value="Todos">Cidades</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Mauá">Mauá</option>
+                    <option value="Santos">Santos </option>
+                    <option value="Campinas">Campinas</option>
+                    <option value="Guarulhos">Guarulhos</option>
+                    <option value="Diadema"> Diadema</option>
+                </select>
+
+            </div>
+
+            <div class="cards" id="cards"></div>
+
+            <div id="paginacao"></div>
+
+        </section>
+
+        <!-- MODAL -->
+
+        <div id="modal" class="modal">
+
+            <div class="modal-content">
+
+                <span id="fechar-modal">&times;</span>
+
+                <img id="modal-img">
+
+                <div class="modal-info">
+
+                    <span id="modal-categoria"></span>
+
+                    <h2 id="modal-titulo"></h2>
+
+                    <p id="modal-descricao"></p>
+
+                    <p>📍 <span id="modal-local"></span></p>
+
+                    <p>📞 <span id="modal-telefone"></span></p>
+
+                    <p>✉️ <span id="modal-email"></span></p>
+
+                    <a id="modal-site" target="_blank">
+                        Visitar Site
+                    </a>
+
+                    <button id="btn-seguir">
+                        Seguir Projeto
+                    </button>
+
+                    <p id="seguidores">
+                        ❤️ 0 pessoas seguem este projeto
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../js/projetos.js"></script>
 </body>
 
 </html>
