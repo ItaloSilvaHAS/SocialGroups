@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(../imagens/img\ principal.jpg);
-    background-size: cover;
+    background-size: auto 90vw;
+    height: 90vw;
 }
 
 @viewport {
@@ -13,6 +14,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 /* Abaixo está o header junto da nav e a logo e as informações */
 
 header .topo {
@@ -29,8 +31,8 @@ header .topo {
 
 }
 
-.topo .logo{
-position: relative;
+.topo .logo {
+    position: relative;
     bottom: 15px;
 
 
@@ -43,7 +45,7 @@ nav .lista {
     list-style: none;
     display: flex;
     gap: 80px;
-    font-size: 18px; 
+    font-size: 18px;
 
 }
 
@@ -65,7 +67,7 @@ nav .Perfil {
     list-style: none;
     display: flex;
     gap: 10px;
-    font-size: 15px; 
+    font-size: 15px;
 }
 
 /* Abaixo está a barra de pesquisa da nav e botões */
@@ -101,6 +103,7 @@ nav .areaUsuario .Entrar {
     background-color: #d89606;
     color: #fff;
 }
+
 nav .areaUsuario .Entrar:hover {
     background-color: #a5fcfcc0;
     transition: ease-in-out 0.5s;
@@ -112,6 +115,7 @@ nav .areaUsuario .Cadastrar {
     background-color: #2aace9;
     color: #fff;
 }
+
 nav .areaUsuario .Cadastrar:hover {
     background-color: #073b77fd;
     transition: ease-in-out 0.5s;
@@ -140,13 +144,44 @@ main .conteudo {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     color: #fff;
-    
+
 }
 
+main .brilho {
+    color: white;
+    animation: brilho 1.5s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow:
+            0 0 5px #b9cfd3,
+            0 0 10px #e1e9eb;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #d1d8da,
+            0 0 20px #cfd5d6,
+            0 0 40px #c7d8db,
+            0 0 80px #00d9ff;
+    }
+}
+
+main .brilho {
+    transition: 0.3s;
+}
+
+main .brilho:hover {
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
 
 main .conteudo p {
     font-size: 50px;
-    color: #000000;
+    color: #0a0a0a98;
     text-align: start;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -157,29 +192,168 @@ main .conteudo p {
 
 main .conteudo #bordainterna {
     border: 1px solid #000000;
-    height:auto
-
+    height: auto
 }
 
 
-main .slider input{
-display: none;
-overflow: hidden;
+main .slider input {
+    display: none;
+    overflow: hidden;
 }
 
-main .Slides{
+main .Slides {
     margin-top: 1vw;
     margin-left: 2vw;
     display: flex;
     overflow: hidden;
 }
 
-main .slide{
+main .slide {
     min-width: 100%;
     flex-shrink: 0;
 }
 
-main .slide img{
+main .slide img {
+    width: 1000px;
+    height: 500px;
+}
+
+
+
+main .manual-navigation2 {
+    position: relative;
+    top: 23vw;
+    right: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+main .manual-btn {
+    width: 15px !important;
+    height: 15px !important;
+    border: 2px solid #000;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin: 0 5px;
+    box-sizing: border-box;
+    float: left;
+    transition: 1s;
+}
+
+main .manual-btn:hover {
+    background-color: #2aace9;
+    transition: 1.0s ease-in-out;
+
+}
+
+main .first {
+    transition: 1s;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -100%;
+}
+
+#radio3:checked~.first {
+    margin-left: -200%;
+}
+
+#radio4:checked~.first {
+    margin-left: -300%;
+}
+
+/* Slides de Educação acima /* ----------------------------
+
+/* Slides de Reciclagem abaixo */
+
+main .conteudo2 {
+    position: relative;
+    top: 25vw;
+    left: 1vw;
+    width: 96%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+
+}
+
+main .brilho {
+    color: white;
+    animation: brilho 1.5s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow:
+            0 0 5px #b9cfd3,
+            0 0 10px #e1e9eb;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #d1d8da,
+            0 0 20px #cfd5d6,
+            0 0 40px #c7d8db,
+            0 0 80px #00d9ff;
+    }
+}
+
+main .brilho {
+    transition: 0.3s;
+}
+
+main .brilho:hover {
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
+
+main .conteudo2 p {
+    font-size: 50px;
+    color: #0a0a0a98;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+
+main .conteudo2 #bordainterna {
+    border: 1px solid #000000;
+    height: auto
+}
+
+
+main .slider input {
+    display: none;
+    overflow: hidden;
+}
+
+main .Slides {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+main .slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+main .slide img {
     width: 1000px;
     height: 500px;
 }
@@ -209,50 +383,36 @@ main .manual-btn {
     transition: 1s;
 }
 
-main .manual-btn:hover{
-background-color: #2aace9;
-transition: 1.0s ease-in-out;
+main .manual-btn:hover {
+    background-color: #2aace9;
+    transition: 1.0s ease-in-out;
 
 }
 
-main .first{
+main .first {
     transition: 1s;
 }
 
-#radio1:checked ~ .first{
+#radio5:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio6:checked~.first {
     margin-left: -100%;
 }
 
-#radio3:checked ~ .first{
+#radio7:checked~.first {
     margin-left: -200%;
 }
 
-#radio4:checked ~ .first{
+#radio8:checked~.first {
     margin-left: -300%;
 }
 
-/* Estilos aplicados apenas em celulares e tablets Abaixo --- telas até 1000px */
-
-
-
-
-@media screen and (max-width: 1300px) {
-    
-    nav ul.lista {
-    position: relative;
-    bottom: 70px;
-    margin-left: 20vw;
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    font-size: 18px; 
-
+.menu-mobile {
+    display: none;
 }
-}
+
 /*Espaço especifico da pagina vagas*/
 
 .main_vaga {
@@ -307,4 +467,224 @@ main .first{
 .footer_vaga {
   background: #2c3a47;
   height: 150px;
+}
+
+
+
+/* Estilos aplicados apenas em celulares Abaixo --- telas até 800 px */
+
+
+@media screen and (max-width: 800px) {
+
+
+
+
+
+
+    body {
+        background-image: url("../imagens/img principal.jpg");
+        background-size: cover;
+        background-position: center;
+        min-width: 10vw;
+        min-height: 380vw;
+        background-repeat: no-repeat;
+        
+    }
+
+    /* HEADER */
+
+    header .topo {
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .topo .logo {
+        position: relative;
+        bottom: 9vw;
+        width: 70px;
+        height: auto;
+    }
+
+    .topo .logoescrita {
+        position: relative;
+        bottom: 30vw;
+        margin-right: 59vw;
+        width: 90px;
+        height: auto;
+    }
+
+    /*---------Abaixo o menu mobile -----*/
+
+    nav .menu-lista {
+        display: none;
+    }
+
+
+    .menu-mobile {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .menu-btn {
+        background: #2aace9;
+        color: white;
+        border: none;
+        font-size: 28px;
+        padding: 8px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    .menu-btn:hover {
+        background: #073b77;
+        transform: scale(1.1);
+    }
+
+
+    .menu-lista {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        background: #2f3a45;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    }
+
+
+    .menu-lista li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        transition: 0.3s;
+    }
+
+
+    .menu-lista li a:hover {
+        background: #2aace9;
+    }
+
+
+    .menu-lista.ativo {
+        display: block;
+        animation: aparecer 0.3s ease;
+    }
+
+
+    .lista {
+        display: none !important;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*---------acima o menu mobile -----*/
+
+    nav .lista {
+        margin-left: 0;
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    nav .barra-pesquisa {
+        overflow: hidden;
+    }
+
+    nav .areaUsuario {
+        position: relative;
+        right: 240px;
+        margin-top: 60px;
+        gap: 15px;
+
+    }
+
+    /* CONTEÚDO */
+
+    main .conteudo,
+    main .conteudo2 {
+        width: 80VW;
+        height: 80%;
+        margin: 140px auto;
+        padding: 15px;
+    }
+
+    main .conteudo {
+        top: 0;
+    }
+
+    main .conteudo2 {
+        top: 0;
+    }
+
+    main .conteudo p,
+    main .conteudo2 p {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    main #bordainterna {
+
+        width: 290px;
+        height: 200px;
+    }
+
+    /* SLIDER */
+
+    main .Slides {
+        margin: 15px 0;
+    }
+
+    main .Slides img {
+        height: 50vw;
+        width: 80vw;
+        border-radius: 10px;
+    }
+
+    /* BOTÕES DE NAVEGAÇÃO */
+
+    main .manual-navigation {
+        position: relative;
+        top: -160px;
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    main .manual-navigation2 {
+        position: relative;
+        top: -160px;
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+
 }

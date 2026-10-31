@@ -8,6 +8,7 @@
     <title>SocialGroups - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
 
 </head>
 
@@ -25,7 +26,6 @@
             <div class="informações">
                 <ul class="lista">
 
-                    <li><a href="index.html"> Início </a></li>
                     <li><a href="Pages/ongs.html"> ONGS </a></li>
                     <li><a href="Pages/projetos.html"> Projetos </a></li>
                     <li><a href="Pages/eventos.html"> Eventos </a></li>
@@ -33,6 +33,21 @@
 
                 </ul>
             </div>
+
+            <div class="menu-mobile">
+
+    <button id="menuBtn" class="menu-btn">
+        ☰
+    </button>
+
+    <ul id="menuLista" class="menu-lista">
+        <li><a href="Pages/ongs.html">ONGs</a></li>
+        <li><a href="Pages/projetos.html">Projetos</a></li>
+        <li><a href="Pages/eventos.html">Eventos</a></li>
+        <li><a href="Pages/vagas.html">Vagas</a></li>
+    </ul>
+
+</div>
 
             <section class="barra-pesquisa">
 
@@ -61,7 +76,7 @@
 
         <div class="conteudo">
 
-            <p> Educação </p>
+            <p class="brilho"> Educação </p>
 
             <div id="bordainterna"> </div>
 
@@ -69,12 +84,16 @@
 
             <!--------radio buttons abaixo----------->
 
+            <!--------Slides abaixo - Educação ----------->
 
             <div class="slider">
 
 
                 <div class="Slides">
 
+
+            <!--------radio buttons abaixo----------->       
+            
                 <input type="radio" name="radio-btn" id="radio1" checked>
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
@@ -82,7 +101,7 @@
 
 
                     <div class="slide first">
-                        <img src="imagens/educação slide.jpg">
+                        <img src="imagens/educação slide.jpg" onclick="window.location.href='Pages/Educação.html'">
                     </div>
 
                     <div class="slide">
@@ -103,7 +122,7 @@
         
 
 
-            <!--------Slides acima----------->
+            
 
             <div class="auto-navigation">
 
@@ -128,7 +147,81 @@
         </div>
     </div>
 
-            <!--------fim dos Slides acima----------->
+            <!--------fim dos Slides acima -Educação----------->
+
+
+
+            <!--------começo dos Slides abaixo -Reciclagem----------->
+            
+                <div class="conteudo2">
+
+            <p class="brilho"> Reciclagem </p>
+
+            <div id="bordainterna"> </div>
+
+
+
+
+            <div class="slider">
+
+
+                <div class="Slides">
+
+
+            <!--------radio buttons abaixo----------->       
+            
+                <input type="radio" name="radio-btn" id="radio5" checked>
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+
+
+                    <div class="slide first">
+                        <img src="imagens/reciclagem 1.jpg" onclick="window.location.href='Pages/Educação.html'">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/reciclagem 2.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/reciclagem 3.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/reciclagem 4.jpg">
+                    </div>
+
+                </div>
+            </div>
+
+        
+
+
+            
+
+            <div class="auto-navigation">
+
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+
+        </div>
+
+        <div class="manual-navigation2">
+
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+
+        </div>
+
+        </div>
+    </div>
 
     </main>
 
