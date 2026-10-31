@@ -143,29 +143,13 @@ document.getElementById('btnLimpar').addEventListener('click', () => {
     Array.from(grade.children).forEach(card => { card.innerHTML = ''; });
 });
 
-// Ao escolher uma imagem, redimensiona e coloca no card clicado
-inputGaleria.addEventListener('change', () => {
-    const arquivo = inputGaleria.files[0];
-    if (!arquivo || cardAtual === null) return;
+// Retrair / expandir a lateral (celular)
+const lateral = document.querySelector('.lateral');
+const lateralToggle = document.getElementById('lateralToggle');
 
-    const leitor = new FileReader();
-    leitor.onload = (e) => {
-        const img = new Image();
-        img.onload = () => {
-            const max = 500;
-            const escala = Math.min(1, max / Math.max(img.width, img.height));
-            const canvas = document.createElement('canvas');
-            canvas.width = img.width * escala;
-            canvas.height = img.height * escala;
-            canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
-            const dataUrl = canvas.toDataURL('image/jpeg', 0.8);
-
-            galeria[cardAtual] = dataUrl;
-            mostrarFoto(grade.children[cardAtual], dataUrl);
-            try { localStorage.setItem(CHAVE_GALERIA, JSON.stringify(galeria)); } catch (err) { }
-        };
-        img.src = e.target.result;
-    };
-    leitor.readAsDataURL(arquivo);
-    inputGaleria.value = '';
-});
+if (lateral && lateralToggle) {
+    lateralToggle.addEventListener('click', () => {
+        const aberta = lateral.classList.toggle('aberta');
+        lateralToggle.setAttribute('aria-expanded', aberta);
+        lateralToggle.textContent = aberta ? '✕ Fechar' : '☰ Menu';
+    });}

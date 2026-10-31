@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+    <link rel="stylesheet" href="../css/Reciclagem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+
+    <!----------------------------- Header e Nav bar abaixo junto das logos e informações!!!------------------------------------------>
+
+    <header>
+
+        <nav class="topo">
+
+            <img src="../imagens/logo com borda.png" height="120px" width="95px" class="logo">
+            <img src="../imagens/logo escrita.png" height="90px" width="110px" class="logoescrita">
+
+            <div class="informações">
+                <ul class="lista">
+                    <li><a href="../index.html"> Início </a></li>
+                    <li><a href="../Pages/projetos.html"> Projetos </a></li>
+                    <li><a href="../Pages/eventos.html"> Eventos </a></li>
+                    <li><a href="../Pages/vagas.html"> Vagas </a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu-mobile">
+
+                <button id="menuBtn" class="menu-btn">
+                    ☰
+                </button>
+
+                <ul id="menuLista" class="menu-lista">
+                    <li><a href="../index.html"> Início </a></li>
+
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="vagas.html">Vagas</a></li>
+                </ul>
+
+            </div>
+
+            <section class="barra-pesquisa">
+
+                <input type="text" placeholder="Pesquisar..." id="pesquisa">
+
+            </section>
+
+            <!----------------------------- Header e Nav bar abaixo junto dos botões------------------------------------------>
+
+            <div class="areaUsuario">
+
+                <button class="Cadastrar" onclick="window.location.href='Cadastro.html'">Cadastrar</button>
+                <button class="Entrar" onclick="window.location.href='Login.html'">Entrar</button>
+
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="pagina-noticia">
+
+            <div class="carrossel-container">
+
+
+
+                <div class="carrossel-vertical">
+
+                    <div class="slide ativo">
+                        <img src="../imagens/reciclagem 1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/reciclagem 2.jpg " alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/reciclagem 3.jpg " alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../imagens/reciclagem 4.jpg " alt="">
+                    </div>
+
+                </div>
+                <!-- Desktop -->
+                <div class="botoes-desktop">
+                    <button class="seta" id="btn-up">▲</button>
+                    <button class="seta" id="btn-down">▼</button>
+                </div>
+
+                <!-- Mobile -->
+                <div class="botoes-mobile">
+                    <button class="seta" id="btn-left">◀</button>
+                    <button class="seta" id="btn-right">▶</button>
+                </div>
+
+            </div>
+
+
+            <div class="conteudo-noticia">
+
+                <h1 id="tituloNoticia">
+                    Projeto de Reciclagem
+                </h1>
+
+                <p id="descricaoNoticia">
+                    Descrição da notícia aparecerá aqui.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="../js/Reciclagem.js"></script>
+</body>
+
+</html>

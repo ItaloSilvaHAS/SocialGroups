@@ -1,0 +1,682 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/img\ principal.jpg);
+    background-size: auto 90vw;
+    height: 90vw;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Abaixo está o header junto da nav e a logo e as informações */
+
+header .topo {
+    border: 1px solid #2f3a45;
+    width: auto;
+    height: 100px;
+    background-color: #2f3a45;
+}
+
+
+.topo .logoescrita {
+    position: relative;
+    bottom: 25px;
+
+}
+
+.topo .logo {
+    position: relative;
+    bottom: 15px;
+
+
+}
+
+nav .lista {
+    position: relative;
+    bottom: 70px;
+    margin-left: 600px;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    font-size: 18px;
+
+}
+
+nav .lista a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+nav .lista a:hover {
+    color: rgb(111, 154, 235);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav .Perfil {
+    position: relative;
+    margin-left: 70px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+}
+
+/* Abaixo está a barra de pesquisa da nav e botões */
+
+
+section #pesquisa {
+    position: relative;
+    bottom: 160px;
+    left: 80%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav .areaUsuario {
+    position: relative;
+    bottom: 90px;
+    margin-left: 80%;
+    display: flex;
+    gap: 30px;
+}
+
+nav .areaUsuario button {
+    padding: 5px 10px;
+    background-color: #f8ebeb;
+    color: #000000;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
+}
+
+nav .areaUsuario .Entrar {
+    background-color: #d89606;
+    color: #fff;
+}
+
+nav .areaUsuario .Entrar:hover {
+    background-color: #a5fcfcc0;
+    transition: ease-in-out 0.5s;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+nav .areaUsuario .Cadastrar {
+    background-color: #2aace9;
+    color: #fff;
+}
+
+nav .areaUsuario .Cadastrar:hover {
+    background-color: #073b77fd;
+    transition: ease-in-out 0.5s;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+nav #areaUsuario {
+    position: relative;
+    bottom: 145px;
+    margin-left: 80%;
+    overflow-x: hidden;
+    gap: 30px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* Conteudo principal abaixo !!*/
+
+.projetos {
+    width: 90%;
+    max-width: 1400px;
+    margin: 150px auto;
+}
+
+.projetos h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filtros input,
+.filtros select {
+
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+}
+
+/*--------------- Card abaixo ----------------- */
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.card {
+
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .2);
+    transition: .4s;
+}
+
+.card:hover {
+    transform:
+        translateY(-10px);
+}
+
+.card img {
+
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+}
+
+/*--------------- tag abaixo ----------------- */
+
+
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #7cb342;
+    color: white;
+    font-size: .8rem;
+}
+
+/*--------------- botões abaixo ----------------- */
+
+.card button {
+
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #2aa7d9;
+    color: white;
+}
+
+#btn-seguir{
+
+    width:100%;
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #2291c5,
+        #16a34a
+    );
+
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#btn-seguir:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(34,197,94,.3);
+}
+
+#btn-seguir.seguindo{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+}
+
+#seguidores{
+
+    margin-top:12px;
+    font-size:.9rem;
+    color:#666;
+}
+
+/*--------------- favorito abaixo ----------------- */
+
+.favorito {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*--------------- modal abaixo ----------------- */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal.ativo {
+
+    display: flex;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    animation: abrir .3s;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 30px;
+}
+
+#fechar-modal {
+
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes abrir {
+    from {
+
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*--------------- paginação abaixo ----------------- */
+
+#paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#paginacao button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/*--------------- Mobile abaixo ----------------- */
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+      body {
+        background-image: url("../imagens/img principal.jpg");
+        background-size: cover;
+        background-position: center;
+        min-width: 10vw;
+        min-height: 900vw;
+        background-repeat: no-repeat;
+        
+    }
+
+    /* HEADER */
+
+    header .topo {
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .topo .logo {
+        position: relative;
+        bottom: 9vw;
+        width: 70px;
+        height: auto;
+    }
+
+    .topo .logoescrita {
+        position: relative;
+        bottom: 30vw;
+        margin-right: 59vw;
+        width: 90px;
+        height: auto;
+    }
+
+
+    header {
+        width: 100%;
+        height: 150px;
+        top: 10px;
+    }
+
+    header.flotante {
+        width: 95%;
+        height: 60px;
+    }
+
+    .menu-btn {
+        font-size: 28px;
+    }
+
+    .menu-lista {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projetos {
+        width: 95%;
+        margin: 100px auto 30px;
+    }
+
+    .projetos h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .filtros input,
+    .filtros select {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: .95rem;
+    }
+
+    .tag {
+        font-size: .75rem;
+    }
+
+    .favorito {
+        font-size: 20px;
+    }
+
+    .card button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .modal-content {
+        width: 95%;
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-content img {
+        height: 220px;
+    }
+
+    .modal-info {
+        padding: 20px;
+    }
+
+    .modal-info h2 {
+        font-size: 1.5rem;
+    }
+
+    #fechar-modal {
+        right: 15px;
+        top: 10px;
+        font-size: 32px;
+    }
+
+    #paginacao {
+        flex-wrap: wrap;
+    }
+
+    /*---------Abaixo o menu mobile -----*/
+
+nav .areaUsuario {
+        position: relative;
+        right: 240px;
+        margin-top: 20px;
+        gap: 15px;
+
+    }
+
+    nav .menu-lista {
+        display: none;
+    }
+
+
+    .menu-mobile {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .menu-btn {
+        background: #2aace9;
+        color: white;
+        border: none;
+        font-size: 28px;
+        padding: 8px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    .menu-btn:hover {
+        background: #073b77;
+        transform: scale(1.1);
+    }
+
+
+    .menu-lista {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        background: #2f3a45;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    }
+
+
+    .menu-lista li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        transition: 0.3s;
+    }
+
+
+    .menu-lista li a:hover {
+        background: #2aace9;
+    }
+
+
+    .menu-lista.ativo {
+        display: block;
+        animation: aparecer 0.3s ease;
+    }
+
+
+    .lista {
+        display: none !important;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    #pesquisa {
+
+        display: none;
+    }
+}
+
+
+
+
+/* ===================================
+   CELULARES PEQUENOS
+=================================== */
+
+@media screen and (max-width:480px) {
+
+    .projetos h1 {
+        font-size: 1.7rem;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: .9rem;
+    }
+
+    .tag {
+        font-size: .7rem;
+        padding: 4px 8px;
+    }
+
+    .favorito {
+        font-size: 18px;
+    }
+
+    .modal-info {
+        padding: 15px;
+    }
+
+    .modal-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-info p {
+        font-size: .9rem;
+    }
+
+    .card button {
+        font-size: .9rem;
+    }
+
+    #paginacao button {
+        padding: 8px 12px;
+        font-size: .9rem;
+    }
+
+}

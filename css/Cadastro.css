@@ -294,3 +294,20 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
     }
 
 }
+
+@media screen and (min-width: 900px) and (max-width: 1800px) {
+
+     main .selecao .ONG,
+    main .selecao .Usuario{
+
+        position: static;
+
+        width: 60%;
+
+        margin: 40px 0;
+
+        font-size: 18px;
+
+        padding: 12px;
+    }
+}

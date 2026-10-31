@@ -1,33 +1,197 @@
-// animação da nav Abaixo abaixo!!
-const element = document.querySelector('.lista');
-element.classList.add('animate__animated', 'animate__fadeInDown');
 
-// Troca dos botões por Perfil abaixo !!
+// ANIMAÇÃO DA NAV
+
+
+const listaAnimada = document.querySelector(".lista");
+
+if (listaAnimada) {
+    listaAnimada.classList.add(
+        "animate__animated",
+        "animate__fadeInDown"
+    );
+}
+
+
+// PERFIL
+
 
 function abrirPerfilOng() {
-    window.location.href = "Pages\PerfilOng.html";
+    window.location.href = "../Pages/PerfilOng.html";
 }
 
 function abrirPerfilUser() {
-    window.location.href = "Pages\PerfilUser.html";
+    window.location.href = "../Pages/PerfilUser.html";
 }
 
 const areaUsuario = document.querySelector(".areaUsuario");
 
-if (
-    areaUsuario &&
-    localStorage.getItem("logado") === "user"
-) {
-    areaUsuario.innerHTML = `
-        <button onclick="abrirPerfil()" class="PerfilOng">
-            Perfil
-        </button>
-    `;
-}else if( localStorage.getItem("logado") === "ong"){
+if (areaUsuario) {
 
-     areaUsuario.innerHTML = `
-        <button onclick="abrirPerfil()" class="PerfilUser">
-            Perfil
-        </button>
+    if (localStorage.getItem("logado") === "user") {
+
+        areaUsuario.innerHTML = `
+            <button onclick="abrirPerfilUser()" class="PerfilUser">
+                Perfil
+            </button>
         `;
+
+    } else if (localStorage.getItem("logado") === "ong") {
+
+        areaUsuario.innerHTML = `
+            <button onclick="abrirPerfilOng()" class="PerfilOng">
+                Perfil
+            </button>
+        `;
+    }
 }
+
+
+// MENU MOBILE
+
+
+const menuBtn = document.getElementById("menuBtn");
+const menuLista = document.getElementById("menuLista");
+
+if (menuBtn && menuLista) {
+
+    menuBtn.addEventListener("click", () => {
+        menuLista.classList.toggle("ativo");
+    });
+
+}
+
+
+// CARROSSEL DE NOTÍCIAS
+
+
+const slides = document.querySelectorAll(".slide");
+
+const noticias = [
+
+    {
+        titulo: "Transformando Vidas por Meio da Educação",
+        descricao: "Da construção de projetos educacionais ao aprendizado em sala de aula e à conquista da formação acadêmica, a educação é a ferramenta mais poderosa para criar oportunidades, desenvolver talentos e transformar o futuro de indivíduos e comunidades."
+    },
+
+    {
+        titulo: "Juntos pelo Acesso ao Conhecimento",
+        descricao: "A jornada da educação começa com o planejamento, ganha vida na sala de aula e se concretiza na formação de cidadãos preparados para enfrentar desafios, inovar e contribuir positivamente para a sociedade."
+    },
+
+    {
+        titulo: "Sua Contribuição Constrói Futuros",
+        descricao: "Por meio de ações sociais e programas educacionais, organizações do terceiro setor trabalham para reduzir desigualdades e garantir que mais pessoas tenham acesso a ensino de qualidade, capacitação e oportunidades de crescimento."
+    },
+
+    {
+        titulo: "Educação que Gera Impacto Social",
+        descricao: "Investir em educação é investir em inclusão, cidadania e desenvolvimento. Cada aluno apoiado, cada aula oferecida e cada diploma conquistado representam um passo em direção a uma sociedade mais justa e igualitária."
+    }
+
+];
+
+const titulo = document.getElementById("tituloNoticia");
+const descricao = document.getElementById("descricaoNoticia");
+
+let indice = 0;
+
+// Verificação de segurança
+if (
+    slides.length > 0 &&
+    titulo &&
+    descricao
+) {
+
+    function atualizar() {
+
+        slides.forEach(slide => {
+            slide.classList.remove("ativo");
+        });
+
+        slides[indice].classList.add("ativo");
+
+        titulo.textContent = noticias[indice].titulo;
+        descricao.textContent = noticias[indice].descricao;
+    }
+
+    function proximo() {
+
+        indice++;
+
+        if (indice >= slides.length) {
+            indice = 0;
+        }
+
+        atualizar();
+    }
+
+    function anterior() {
+
+        indice--;
+
+        if (indice < 0) {
+            indice = slides.length - 1;
+        }
+
+        atualizar();
+    }
+
+    const btnDown = document.getElementById("btn-down");
+    const btnUp = document.getElementById("btn-up");
+    const btnleft = document.getElementById("btn-left");
+    const btnright = document.getElementById("btn-right");
+
+    if (btnDown) {
+        btnDown.addEventListener("click", proximo);
+    }
+
+    if (btnUp) {
+        btnUp.addEventListener("click", anterior);
+    }
+
+    if (btnleft) {
+        btnleft.addEventListener("click", proximo);
+    }
+
+    if (btnright) {
+        btnright.addEventListener("click", anterior);
+    }
+
+    atualizar();
+
+    setInterval(proximo, 15000);
+}
+
+console.log("Slides encontrados:", slides.length);
+
+
+//add touch nos slides para
+
+const carrossel = document.querySelector(".carrossel-vertical");
+ 
+let startX = 0;
+let startY = 0;
+ 
+carrossel.addEventListener("touchstart", (e) => {
+startX = e.touches[0].clientX;
+startY = e.touches[0].clientY;
+});
+ 
+carrossel.addEventListener("touchend", (e) => {
+const endX = e.changedTouches[0].clientX;
+const endY = e.changedTouches[0].clientY;
+ 
+const deltaX = endX - startX;
+const deltaY = endY - startY;
+ 
+// Ignora movimentos mais verticais do que horizontais
+if (Math.abs(deltaX) < Math.abs(deltaY)) return;
+ 
+if (deltaX > 50) {
+anterior();
+}
+ 
+if (deltaX < -50) {
+proximo();
+}
+});

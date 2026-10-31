@@ -45,7 +45,7 @@ setInterval(() => {
     }
 
     document.getElementById("radio" + count).checked = true;
-}, 10000);
+}, 15000);
 
 // Menu mobile!!
 
@@ -54,4 +54,84 @@ const menuLista = document.getElementById("menuLista");
 
 menuBtn.addEventListener("click", () => {
     menuLista.classList.toggle("ativo");
+});
+
+//add touch nos slides para mobile -Educação
+
+const sliderEducacao = document.querySelector(".conteudo .slider");
+
+let startX = 0;
+
+sliderEducacao.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+sliderEducacao.addEventListener("touchend", (e) => {
+
+    let endX = e.changedTouches[0].clientX;
+    let distancia = endX - startX;
+
+    if (distancia < -50) {
+        // próxima imagem
+        count++;
+
+        if (count > 4) count = 1;
+
+        document.getElementById("radio" + count).checked = true;
+    }
+
+    if (distancia > 50) {
+        // imagem anterior
+        count--;
+
+        if (count < 1) count = 4;
+
+        document.getElementById("radio" + count).checked = true;
+    }
+
+});
+
+//add touch nos slides para mobile - Reciclagem
+
+let countReciclagem = 5;
+
+const sliderReciclagem = document.querySelector(".conteudo2 .slider");
+
+let startX2 = 0;
+
+sliderReciclagem.addEventListener("touchstart", (e) => {
+    startX2 = e.touches[0].clientX;
+});
+
+sliderReciclagem.addEventListener("touchend", (e) => {
+
+    let endX2 = e.changedTouches[0].clientX;
+    let distancia2 = endX2 - startX2;
+
+    if (distancia2 < -50) {
+
+        countReciclagem++;
+
+        if (countReciclagem > 8) {
+            countReciclagem = 5;
+        }
+
+        document.getElementById(
+            "radio" + countReciclagem
+        ).checked = true;
+    }
+
+    if (distancia2 > 50) {
+
+        countReciclagem--;
+
+        if (countReciclagem < 5) {
+            countReciclagem = 8;
+        }
+
+        document.getElementById(
+            "radio" + countReciclagem
+        ).checked = true;
+    }
+
 });
