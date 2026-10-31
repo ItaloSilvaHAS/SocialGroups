@@ -83,7 +83,7 @@ section #pesquisa {
 
 nav .areaUsuario {
     position: relative;
-    bottom: 90px;
+    bottom: 110px;
     margin-left: 80%;
     display: flex;
     gap: 30px;
@@ -415,6 +415,10 @@ nav #areaUsuario {
         height: auto;
     }
 
+    .lista{
+
+        display: none;
+    }
 
     header {
         width: 100%;
@@ -627,9 +631,8 @@ nav .areaUsuario {
 
 
 
-/* ===================================
-   CELULARES PEQUENOS
-=================================== */
+  /* CELULARES PEQUENOS */
+
 
 @media screen and (max-width:480px) {
 
