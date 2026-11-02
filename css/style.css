@@ -413,11 +413,18 @@ main .first {
     display: none;
 }
 
+/* Rodapé */
+footer {
+  background: #2c3a47;
+  height: 150px;
+  margin-top: 25%
+}
+
 
 /* Estilos aplicados apenas em celulares Abaixo --- telas até 800 px */
 
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 800px) {
 
 
 
@@ -426,7 +433,7 @@ main .first {
         background-size: cover;
         background-position: center;
         min-width: 10vw;
-        min-height: 380vw;
+        min-height: 350vw;
         background-repeat: no-repeat;
         
     }
@@ -628,6 +635,13 @@ main .first {
     touch-action: pan-y;
 }
 
+/* Rodapé */
+footer {
+  background: #2c3a47;
+  height: 150px;
+ margin-top: -35%
+}
+
 
 }
 
@@ -635,8 +649,6 @@ main .first {
 /*------------telas até 1200 a 1600px */
 
 
-
-}
 
 @media screen and (min-width: 900px) and (max-width: 1800px) {
 
@@ -662,6 +674,13 @@ main .Slides {
         width: 50vw;
         border-radius: 10px;
     }
+
+/* Rodapé */
+footer {
+  background: #2c3a47;
+  height: 150px;
+}
+
 
 }
 

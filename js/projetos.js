@@ -22,7 +22,7 @@ const ongs = [
     categoria:"Meio Ambiente",
     cidade:"Mauá",
     telefone:"(11)98888-8888",
-    email:"contato@natureza.com",
+    email:"projetos@futuroverde.com",
     site:"https://google.com",
     descricao:"Reflorestamento urbano.",
     imagem:"../imagens/ambiente.jpg"
@@ -48,7 +48,7 @@ const ongs = [
     categoria:"Meio Ambiente",
     cidade:"São Bernardo do Campo",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"contato@geracaofuturo.com",
     site:"https://google.com",
     descricao:"ONG dedicada ao reflorestamento de áreas urbanas e à educação ambiental em escolas públicas.",
     imagem:"../imagens/meioambiente.jpg"
@@ -61,7 +61,7 @@ const ongs = [
     categoria:"Educação",
     cidade:"Mauá",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"apoio@transformarvidas.com",
     site:"https://google.com",
     descricao:"Oferece reforço escolar, material didático e apoio educacional para estudantes em situação de vulnerabilidade.",
     imagem:"../imagens/saber.jpg"
@@ -74,7 +74,7 @@ const ongs = [
     categoria:"Proteção Animal",
     cidade:"Rio de Janeiro",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"contato@laranimal.com",
     site:"https://google.com",
     descricao:"Resgata, trata e encaminha animais abandonados para adoção responsável.",
     imagem:"../imagens/cachorros.jpg"
@@ -87,7 +87,7 @@ const ongs = [
     categoria:"Cultura",
     cidade:"Diadema",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"transformarte@gmail.com",
     site:"https://google.com",
     descricao:"Incentiva o desenvolvimento artístico de jovens por meio de oficinas gratuitas.",
     imagem:"../imagens/arte.jpg"
@@ -100,7 +100,7 @@ const ongs = [
     categoria:"Esporte",
     cidade:"São Paulo",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"eporteevida@gmail.com",
     site:"https://google.com",
     descricao:"Utiliza o esporte como ferramenta de inclusão social e desenvolvimento pessoal.",
     imagem:"../imagens/esporte.jpg"
@@ -113,7 +113,7 @@ const ongs = [
     categoria:"Tecnologia",
     cidade:"Rio de Janeiro",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"conecta@gmail.com",
     site:"https://google.com",
     descricao:"Oferece cursos gratuitos de programação, design digital e informática básica.",
     imagem:"../imagens/conecta.jpg"
@@ -126,7 +126,7 @@ const ongs = [
     categoria:"Assistência Social",
     cidade:"Guarulhos",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"solidarios@gmail.com",
     site:"https://google.com",
     descricao:"Atua no combate à fome através da arrecadação e distribuição de alimentos para famílias vulneráveis.",
     imagem:"../imagens/social.jpg"
@@ -139,7 +139,7 @@ const ongs = [
     categoria:"Terceira Idade",
     cidade:"Campinas",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"melhora@gmail.com",
     site:"https://google.com",
     descricao:"Promove atividades físicas, sociais e culturais voltadas ao bem-estar da população idosa..",
     imagem:"../imagens/idade.jpg"
@@ -152,7 +152,7 @@ const ongs = [
     categoria:"Inclusão Social",
     cidade:"Santos",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"inclu@gmail.com",
     site:"https://google.com",
     descricao:"Trabalha pela inclusão e autonomia de pessoas com deficiência através de programas educacionais e profissionais.",
     imagem:"../imagens/inclusao.jpg"
@@ -165,7 +165,7 @@ const ongs = [
     categoria:"Conservação Marinha",
     cidade:"Santos",
     telefone:"(21)96666-6666",
-    email:"contato@saude.com",
+    email:"Ondazul@gmail.com",
     site:"https://google.com",
     descricao:"Atua na preservação dos oceanos através de ações de limpeza costeira, educação ambiental e proteção da fauna marinha.",
     imagem:"../imagens/litoral.jpg"
