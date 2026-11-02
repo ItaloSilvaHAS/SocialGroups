@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-image: url(../imagens/img\ principal.jpg);
     background-size: auto 90vw;
-    height: 90vw;
+    height: 100%;
 }
 
 @viewport {
@@ -368,6 +368,12 @@ nav #areaUsuario {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background: #2c3a47;
+  height: 150px;
 }
 
 
