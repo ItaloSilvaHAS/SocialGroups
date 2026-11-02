@@ -152,6 +152,7 @@ main {
 }
 
 .texto {
+    font-size: 16px;
     flex: 1;
 }
 
@@ -171,6 +172,14 @@ main {
     padding: 2px 12px;
     border-radius: 20px;
 }
+
+.botao.azul {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 .menu-mobile {
     display: none;
@@ -329,4 +338,16 @@ footer {
         gap: 15px;
 
     }
+
+    .botao.azul {
+        font-size: 12px;
+    text-decoration: none;
+}
+
+.texto {
+    font-size: 14px;
+    flex: 1;
+}
+
+
 }
