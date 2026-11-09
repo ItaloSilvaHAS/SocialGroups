@@ -32,37 +32,39 @@
 
         </div>
 
-<!----------------------------- Cadastro ONG abaixo------------------------------------------>
+        <!----------------------------- Cadastro ONG abaixo------------------------------------------>
 
         <div id="formOng" class="formulario oculto">
             <h2>Cadastro ONG</h2>
 
             <button onclick="voltar()" class="voltarONG">← Voltar</button>
-        <form>
-            <input type="text" placeholder="Nome da ONG" required>
-            <input type="text" placeholder="CNPJ" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <input type="button" value="Cadastrar" onclick="cadastrarONG()" class="cadastrarONG">
-        </form>
+
+            <form>
+                <input type="text" id="ongNome" placeholder="Nome da ONG" required>
+                <input type="text" id="ongCnpj" placeholder="CNPJ" required>
+                <input type="email" id="ongEmail" placeholder="E-mail" required>
+                <input type="password" id="ongSenha" placeholder="Senha" required>
+                <input type="button" value="Cadastrar" onclick="cadastrarONG()" class="cadastrarONG">
+            </form>
 
         </div>
 
 
 
-<!----------------------------- Cadastro Usuario abaixo------------------------------------------>
+        <!----------------------------- Cadastro Usuario abaixo------------------------------------------>
         <div id="formUsuario" class="formulario oculto">
             <h2>Cadastro Usuário</h2>
 
-            <button onclick="voltar()"  class="voltarUsuario" id="volte">← Voltar</button>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="date" placeholder="Data de nascimento">
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <input type="button" value="Cadastrar"  onclick="cadastrarUsuario()" class="cadastrarUsuario">
-            
-        </form>
+            <button onclick="voltar()" class="voltarUsuario" id="volte">← Voltar</button>
+
+
+            <form>
+                <input type="text" id="userNome" placeholder="Nome" required>
+                <input type="date" id="userNascimento">
+                <input type="email" id="userEmail" placeholder="E-mail" required>
+                <input type="password" id="userSenha" placeholder="Senha" required>
+                <input type="button" value="Cadastrar" onclick="cadastrarUsuario()" class="cadastrarUsuario">
+            </form>
         </div>
 
 
