@@ -1,1 +1,0 @@
-# O Banco de dados sera local, em SQLITE dentro desta pasta mesmo. Gerenciando tudo, como tabelas, users, para rodar localmente. 
