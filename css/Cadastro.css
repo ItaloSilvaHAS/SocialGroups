@@ -227,17 +227,13 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
         width: 85%;
         max-width: 350px;
         height: 250px;
-
         left: 0;
         top: 70px;
-
         margin: 0 auto;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
         padding: 30px 15px;
     }
 
@@ -245,15 +241,10 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
 
     main .selecao .ONG,
     main .selecao .Usuario{
-
         position: static;
-
         width: 80%;
-
         margin: 40px 0;
-
         font-size: 18px;
-
         padding: 12px;
     }
 
@@ -262,7 +253,6 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
     .formulario{
         width: 85%;
         height: auto;
-
         margin-top: 80px;
         padding: 20px;
     }
@@ -275,39 +265,53 @@ main #formOng input[type="button"], main #formUsuario input[type="button"] {
 
     main #formOng input[type="button"],
     main #formUsuario input[type="button"]{
-
         left: 0;
         top: 0;
-
         width: 100%;
         margin-top: 10px;
     }
 
     .voltarONG,
     .voltarUsuario{
-
-
         top: -160px;
-        
         width: 26%;
        
     }
 
 }
 
-@media screen and (min-width: 900px) and (max-width: 1800px) {
+@media screen and (min-width: 1100px) and (max-width: 1800px) {
 
      main .selecao .ONG,
     main .selecao .Usuario{
-
-        position: static;
-
-        width: 60%;
-
-        margin: 40px 0;
-
+        position: absolute;
+        width: 45%;
+        margin: 15px 0;
         font-size: 18px;
-
         padding: 12px;
+        gap: 25px;
     }
+
+     /* formulários */
+
+    .formulario{
+        width: 25%;
+        height: auto;
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+     .selecao{
+        width: 85%;
+        max-width: 350px;
+        height: 250px;
+        left: 0;
+        top: 70px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 15px;
+}
 }

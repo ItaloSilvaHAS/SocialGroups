@@ -74,7 +74,6 @@
      color: #ffff;
      font-weight: 800px;
      padding: 10px 10px 10px;
-
      cursor: pointer;
      border: none;
      transition: 0.3s;
@@ -292,20 +291,19 @@
      background-size: cover;
  }
 
+ body .voltar {
+     position: relative;
+     margin-right: 200px;
+     bottom:  8vw;
+     margin: 20px 0 0 50px;
+     padding: 5px 10px;
+     background-color: transparent;
+     color: #ffffff;
+     border: 1px solid #fafafa;
+     border-radius: 5px;
+     cursor: pointer;
+     box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
 
-
-     body .voltar {
-         position: relative;
-         right: 25vw;
-         bottom: 2vw;
-         margin: 20px 0 0 50px;
-         padding: 5px 10px;
-         background-color: transparent;
-         color: #ffffff;
-         border: 1px solid #fafafa;
-         border-radius: 5px;
-         cursor: pointer;
-         box-shadow: 1px 5px 0px rgba(0, 47, 255, 0.1);
-     }
+ }
 
  }

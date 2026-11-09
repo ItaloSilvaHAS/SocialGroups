@@ -631,55 +631,28 @@ nav .areaUsuario {
 
 
 
-  /* CELULARES PEQUENOS */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
 
-
-@media screen and (max-width:480px) {
-
-    .projetos h1 {
-        font-size: 1.7rem;
+   #pesquisa {
+margin-right: 35vw;
     }
 
-    .card img {
-        height: 180px;
+main .Slides {
+        margin: 15px 0;
     }
 
-    .card h2 {
-        font-size: 1.2rem;
+    main .Slides img {
+        height: 25vw;
+        width: 50vw;
+        border-radius: 10px;
     }
 
-    .card p {
-        font-size: .9rem;
-    }
+/* Rodapé */
+footer {
+  background: #2c3a47;
+  height: 150px;
+}
 
-    .tag {
-        font-size: .7rem;
-        padding: 4px 8px;
-    }
-
-    .favorito {
-        font-size: 18px;
-    }
-
-    .modal-info {
-        padding: 15px;
-    }
-
-    .modal-info h2 {
-        font-size: 1.3rem;
-    }
-
-    .modal-info p {
-        font-size: .9rem;
-    }
-
-    .card button {
-        font-size: .9rem;
-    }
-
-    #paginacao button {
-        padding: 8px 12px;
-        font-size: .9rem;
-    }
 
 }
+
